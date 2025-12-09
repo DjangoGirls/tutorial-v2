@@ -9,10 +9,9 @@
     "preview": "astro preview",
     "astro": "astro",
     "prepare": "husky",
-    "test": "vitest run",          
+    "test": "vitest run",
     "test:watch": "vitest",
-    "test:e2e": "playwright test" 
-
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.37.0",
