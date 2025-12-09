@@ -7,7 +7,12 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prepare": "husky",
+    "test": "vitest run",          
+    "test:watch": "vitest",
+    "test:e2e": "playwright test" 
+
   },
   "dependencies": {
     "@astrojs/starlight": "^0.37.0",
@@ -15,5 +20,14 @@
     "flag-icons": "^7.5.0",
     "sharp": "^0.34.2",
     "swiper": "^12.0.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/user-event": "^14.6.1",
+    "husky": "^9.1.7",
+    "jsdom": "^27.3.0",
+    "vitest": "^4.0.15"
   }
 }
