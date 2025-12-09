@@ -10,9 +10,9 @@ Because installation steps differ depending on your operating system, please cho
 
 ## Choose Your Operating System
 
-- [Start the tutorial for **Windows**](/windows/)
-- [Start the tutorial for **Linux**](/linux/)
-- [Start the tutorial for **macOS**](/macos/)
+- [Start the tutorial for **Windows**](/en/windows/)
+- [Start the tutorial for **Linux**](/en/linux/)
+- [Start the tutorial for **macOS**](/en/macos/)
 
 ---
 
