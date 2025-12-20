@@ -14,22 +14,12 @@ import 'swiper/element/bundle';
     </summary>
   </details>
 
-  <!-- Existing OS collapsible menus -->
-  <details open={currentOS === "chromebook"}>
-    <summary class={currentOS === "chromebook" ? "active" : ""}>
-      <a href="/en/chromebook/">Chromebook</a>
-    </summary>
-    <ul>
-      <li><a href="/en/chromebook/chapter1/">Chapter 1</a></li>
-      <!-- more chapters -->
-    </ul>
-  </details>
-
   <details open={currentOS === "linux"}>
     <summary class={currentOS === "linux" ? "active" : ""}>
       <a href="/en/linux/">Linux</a>
     </summary>
     <ul>
+      <li><a href="/en/chromebook/">Chromebook Installation</a></li>
       <li><a href="/en/linux/chapter1/">Chapter 1</a></li>
       <!-- more chapters -->
     </ul>
