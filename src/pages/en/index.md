@@ -3,8 +3,6 @@ layout: ../../layouts/TutorialLayout.astro
 title: Django Girls Tutorial
 ---
 
-# Django Girls Tutorial
-
 > This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
 > To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 

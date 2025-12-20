@@ -32,7 +32,7 @@ Now you know how to open a command line, we just need to understand what the "pr
 
 On Windows, you probably see a `>`, like this:
 
-**Filename:** `command-line`
+ `command-line`
 ```bash
 >
 ```
@@ -128,7 +128,7 @@ All you need to do is find a directory in which you want to create the `virtuale
 
 For this tutorial we will be using a new directory `djangogirls` from your home directory:
 
-**Filename:** `command-line`
+ `command-line`
 ```bash
 > mkdir djangogirls
 > cd djangogirls
@@ -136,14 +136,14 @@ For this tutorial we will be using a new directory `djangogirls` from your home 
 
 We will make a virtualenv called `myvenv`. The general command will be in the format:
 
-**Filename:** `command-line`
+ `command-line`
 ```bash
 > python3 -m venv myvenv
 ```
 
 To create a new `virtualenv`, you need to open the command prompt and run `python -m venv myvenv`. It will look like this:
 
-**Filename:** `command-line`
+ `command-line`
 ```bash
 C:\Users\Name\djangogirls> python -m venv myvenv
 ```
@@ -156,14 +156,14 @@ The command above will create a directory called `myvenv` (or whatever name you 
 
 Start your virtual environment by running:
 
-**Filename:** `command-line`
+ `command-line`
 ```bash
 C:\Users\Name\djangogirls> myvenv\Scripts\activate
 ```
 
 > __NOTE:__ On Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option.  Then try typing the following command before starting your virtual environment:
 
-**Filename:** `command-line`
+ `command-line`
 ```bash
 C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
      Execution Policy Change
@@ -190,7 +190,7 @@ Now that you have your `virtualenv` started, you can install Django.
 
 Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
-**Filename:** `command-line`
+ `command-line`
 ```bash
 (myvenv) C:\Users\Name\djangogirls> python -m pip install --upgrade pip
 ```
@@ -211,14 +211,14 @@ djangogirls
 
 In your `djangogirls/requirements.txt` file you should add the following text:
 
-**Filename:** `djangogirls/requirements.txt`
+ `djangogirls/requirements.txt`
 ```
 Django~={DJANGO_VERSION}
 ```
 
 Now, run `pip install -r requirements.txt` to install Django.
 
-**Filename:** `command-line`
+ `command-line`
 ```bash
 (myvenv) C:\Users\Name\djangogirls> pip install -r requirements.txt
 Collecting Django~={DJANGO_VERSION} (from -r requirements.txt (line 1))
@@ -231,7 +231,7 @@ Successfully installed Django-{DJANGO_VERSION}
 
 If you are on Windows 8 or 10, your command line might freeze when you try to install Django. If this happens, instead of the above command use:
 
-**Filename:** `command-line`
+ `command-line`
 ```bash
 C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
 ```

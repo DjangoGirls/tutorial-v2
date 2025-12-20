@@ -43,7 +43,7 @@ footer {
    Header & Footer
 ----------------------------------------------------- */
 header, footer {
-  background: #F36F45; /* Django Girls orange */
+  background: #C25100; /* Django Girls orange */
   color: white;
   padding: 1rem;
   text-align: center;
@@ -118,7 +118,7 @@ header h1 {
 }
 
 .sidebar summary.active {
-  background: #F36F45;
+  background: #C25100;
   color: white;
 }
 
@@ -186,7 +186,7 @@ img {
 }
 
 .content a {
-  color: #F36F45;
+  color: #C25100;
   text-decoration: none;
 }
 
@@ -216,7 +216,7 @@ img {
 ----------------------------------------------------- */
 .menu-toggle {
   display: none;
-  background: #F36F45;
+  background: #C25100;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
