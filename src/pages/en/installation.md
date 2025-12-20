@@ -33,7 +33,7 @@ In this tutorial you will be building a blog. In order to do that, as you go thr
 
 ## Choose Your Operating System
 
-- [Start the tutorial for **ChromeBook**](/en/chromebook/)
-- [Start the tutorial for **Linux**](/en/linux/)
-- [Start the tutorial for **macOS**](/en/macos/)
-- [Start the tutorial for **Windows**](/en/windows/)
+- [Installation for **ChromeBook**](/en/chromebook/)
+- [Installation for **Linux**](/en/linux/)
+- [Installation for **macOS**](/en/macos/)
+- [Installation for **Windows**](/en/windows/)
