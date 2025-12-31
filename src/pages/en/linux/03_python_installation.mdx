@@ -1,0 +1,122 @@
+---
+layout: ../../../layouts/TutorialLayout.astro
+title: Python Installation
+currentOS: linux
+order: 3
+---
+
+import { DJANGO_VERSION } from '../../../config/tutorial';
+import { PYTHON_VERSION } from '../../../config/tutorial';
+import { PYTHON_RELEASE } from '../../../config/tutorial';
+import { PYTHON_MIN_RELEASE } from '../../../config/tutorial';
+import { PYTHON_MIN_VERSION } from '../../../config/tutorial';
+import Section from "@/components/Section.astro";
+
+# Let’s start with Python
+
+We're finally here!
+
+But first, let us tell you what Python is. Python is a very popular programming language that can be used 
+for creating websites, games, scientific software, graphics, and much, much more.
+
+Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!).
+ This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+
+# Python installation
+
+> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](/en/chromebook/) instructions.
+
+> **Note** If you already worked through the [installation steps](../installation/README.md), there's no need 
+to do this again – you can skip straight ahead to the next chapter!
+
+# Python installation
+
+> **Note** If you already worked through the [installation steps](../installation/README.md), there's no need 
+to do this again – you can skip straight ahead to the next chapter!
+
+> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+
+> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
+
+Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want 
+you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade 
+it. If you already have version { PYTHON_MIN_VERSION } or higher you should be fine.
+
+Please install normal Python as follows, even when you have Anaconda installed on your computer.
+
+It is very likely that you already have Python installed out of the box. To check if you have it installed 
+(and which version it is), open a console and type the following command:
+
+`command-line`
+```
+$ python3 --version
+Python 3.12.3
+```
+
+If you have a different version of Python installed, at least { PYTHON_MIN_VERSION } (e.g. { PYTHON_MIN_RELEASE }), 
+then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check which Linux distribution you are using with the following command:
+
+`command-line`
+```
+$ grep '^NAME=' /etc/os-release
+```
+
+Afterwards, depending on the result, follow one of the following installation guides below this section.
+
+<Section
+  title="Install Python: Debian or Ubuntu"
+  id="python_debian"
+  collapse={true}
+>
+  Type this command into your console:
+
+`command-line`
+```
+$ sudo apt install python3
+```
+</Section>
+
+<Section
+  title="Install Python: Fedora"
+  id="python_fedora"
+  collapse={true}
+>
+  Use this command in your console:
+
+`command-line`
+```
+$ sudo dnf install python3
+```
+
+If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, 
+you need to use `yum` instead.
+
+</Section>
+
+<Section
+  title="Install Python: openSUSE"
+  id="python_opensuse"
+  collapse={true}
+>
+  Use this command in your console:
+
+`command-line`
+```
+$ sudo zypper install python3
+```
+</Section>
+
+
+Verify the installation was successful by opening a command prompt and running the `python3` command:
+
+`command-line`
+```
+$ python3 --version
+Python 3.12.3
+```
+The version shown may be different from { PYTHON_RELEASE } -- it should match the version you installed.
+
+----
+
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your 
+coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.

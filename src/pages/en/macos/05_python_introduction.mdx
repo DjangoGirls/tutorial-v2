@@ -1,7 +1,7 @@
 ---
 layout: ../../../layouts/TutorialLayout.astro
 title: Python Introduction
-currentOS: windows
+currentOS: macos
 order: 5
 ---
 import ErrorIcon from "../../../components/ErrorIcon";
@@ -14,20 +14,18 @@ Let's write some code!
 
 ## Python prompt
 
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and 
-Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know 
-how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
 Once you're ready, follow the instructions below.
 
-We want to open up a Python console, so type in `python` on Windows and hit `enter`.
+We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
 `command-line`
-```bash
-> python3
-Python {{ book.py_release }} (...)
+```
+$ python3
+Python 3.12.3 (...)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
@@ -76,9 +74,9 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. 
-The string must always begin and end with the same character. This may be single (`'`) or double (`"`) 
-quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+You've now created your first string! It's a sequence of characters that can be processed by a computer. The 
+string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes 
+(there is no difference!) The quotes tell Python that what's inside of them is a string.
 
 Strings can be strung together. Try this:
 
@@ -133,12 +131,11 @@ If you want to know the number of letters contained in your name, there is a __f
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and 
-sometimes you first call a function and place the string in parentheses? Well, in some cases, functions 
-belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the 
-function a __method__. Other times, functions don't belong to anything specific and can be used on 
-different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the 
-`len` function.
+Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes 
+you first call a function and place the string in parentheses? Well, in some cases, functions belong to 
+objects, like `upper()`, which can only be performed on strings. In this case, we call the function a 
+__method__. Other times, functions don't belong to anything specific and can be used on different types of 
+objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
 ### Summary
 
@@ -153,8 +150,8 @@ These are the basics of every programming language you learn. Ready for somethin
 
 ## Errors
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of 
-our name? Type in `len(304023)` and hit `enter`:
+Let's try something new. Can we get the length of a number the same way we could find out the length of our 
+name? Type in `len(304023)` and hit `enter`:
 
 <ErrorIcon /> `command-line`
 ```python
@@ -165,8 +162,7 @@ TypeError: object of type 'int' has no len()
 ```
 
 We got our first error! The <ErrorIcon /> icon is our way of giving you a heads up that the code you 
-are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of 
-learning!
+are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
 
  It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe 
  we can write our number as a string? Strings have a length, right?
@@ -277,9 +273,8 @@ want to print things on multiple lines.
 
 ## Lists
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to 
-introduce one called __list__. Lists are exactly what you think they are: objects which are lists of other 
-objects. :)
+Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce 
+one called __list__. Lists are exactly what you think they are: objects which are lists of other objects. :)
 
 Go ahead and create a list:
 
@@ -313,8 +308,7 @@ Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we 
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's 
-print it out again and see what happened:
+This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
 
 `command-line`
 ```python
@@ -342,8 +336,9 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using __indexes__. An index is the number 
-that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+If you want to show only the first number, you can do this by using __indexes__. An index is the number that 
+says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your 
+list is at index 0, the next one is at 1, and so on. Try this:
 
 `command-line`
 ```python
@@ -384,8 +379,8 @@ https://docs.python.org/3/tutorial/datastructures.html
 
 > For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. 
-A key can be any string or number. The syntax to define an empty dictionary is:
+A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A 
+key can be any string or number. The syntax to define an empty dictionary is:
 
 `command-line`
 ```python
@@ -455,8 +450,7 @@ add new key–value pairs to a dictionary after it is created, like this:
 >>> participant['favorite_language'] = 'Python'
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing 
-things.
+I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
 
 You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry 
 corresponding to the key `'favorite_numbers'`, type in the following command:
@@ -469,11 +463,9 @@ corresponding to the key `'favorite_numbers'`, type in the following command:
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been 
-deleted.
+As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. 
-Type this:
+As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
 
 `command-line`
 ```python
@@ -501,8 +493,8 @@ Excited for the next part? :)
 
 > For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! 
-Let's see how that works:
+A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's 
+see how that works:
 
 `command-line`
 ```python
@@ -520,14 +512,14 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can 
-also compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by 
+We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also 
+compare values of mathematical expressions like `2 * 2` and function results like the `2` returned by 
 `len([4, 5])`. Nice, huh?
 
 Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a 
 single `=` for assigning values to variables. You always, __always__ need to put two of them – `==` – if 
-you want to check if things are equal to each other. We can also state that things are unequal to each 
-other. For that, we use the symbol `!=`, as shown in the example above.
+you want to check if things are equal to each other. We can also state that things are unequal to each other. 
+For that, we use the symbol `!=`, as shown in the example above.
 
 Give Python two more tasks:
 
@@ -561,7 +553,8 @@ True
 You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
 
 - __and__ – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-- __or__ – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- __or__ – if you use the `or` operator, only one of the comparisons has to be True in order for the whole 
+command to be True
 
 Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
 
@@ -639,8 +632,8 @@ $
 
 This will put you back into the command prompt.
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need 
-to open the editor now and write some code into a new file:
+Earlier, we picked out a code editor from the [code editor](/en/code_editor/) section. We'll need to open 
+the editor now and write some code into a new file:
 
 `editor`
 ```python
@@ -664,21 +657,14 @@ function, which we'll see below). This is one of the reasons we use a code edito
 With the file saved, it's time to run it! Using the skills you've learned in the command line section, use 
 the terminal to **change directories** to the desktop.
 
-On Windows Command Prompt, it will be like this:
+On a Mac, the command will look something like this:
 
 `command-line`
 ```
-> cd %HomePath%\Desktop
+$ cd ~/Desktop
 ```
 
-And on Windows Powershell, it will be like this:
-
-`command-line`
-```
-> cd $Home\Desktop
-```
-
-f you get stuck, ask for help. That's exactly what the coaches are here for!
+If you get stuck, ask for help. That's exactly what the coaches are here for!
 
 Now use Python to execute the code in the file like this:
 
@@ -686,13 +672,6 @@ Now use Python to execute the code in the file like this:
 ```
 $ python3 python_intro.py
 Hello, Django girls!
-```
-
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
-
-`command-line`
-```python
-> python python_intro.py
 ```
 
 Alright! You just ran your first Python program that was saved to a file. Feel awesome?
@@ -842,8 +821,7 @@ is doing something, or providing a summary when it's doing something complex.
 
 In the last few exercises you learned about:
 
-- __comparing things__ – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the 
-`and`, `or` operators
+- __comparing things__ – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
 - __Boolean__ – a type of object that can only have one of two values: `True` or `False`
 - __Saving files__ – storing code in files so you can execute larger programs.
 - __if … elif … else__ – statements that allow you to execute code only when certain conditions are met.
@@ -933,10 +911,9 @@ TypeError: hi() missing 1 required positional argument: 'name'
 
 Oops, an error. Luckily, Python gives us a pretty useful error message.
 It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and 
-that we forgot to pass it when calling the function.
-Let's fix it at the bottom of the file:
+that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
-`python_intro.py`
+1python_intro.py`
 ```python
 hi("Ola")
 ```
@@ -1078,8 +1055,7 @@ Which would print:
 provided by you as parameters).
 
 Note that the second of these two numbers is not included in the list that is output by Python (meaning 
-`range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because `range` is half-open, 
-and by that we mean it includes the first value, but not the last.
+`range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because `range` is half-open, and by that we mean it includes the first value, but not the last.
 
 ## Summary
 

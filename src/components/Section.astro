@@ -1,0 +1,20 @@
+---
+const { title, id, collapse = false } = Astro.props;
+---
+
+<details id={id} open={!collapse}>
+  <summary>{title}</summary>
+  <div class="section-body">
+    <slot />
+  </div>
+</details>
+
+<style>
+  details {
+    margin: 1rem 0;
+  }
+  summary {
+    cursor: pointer;
+    font-weight: bold;
+  }
+</style>
